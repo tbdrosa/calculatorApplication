@@ -54,3 +54,8 @@ body{
     font-size: 1.5rem;
 }
 
+.output .current-opperand{
+    color: #fff;
+    font-size: 3rem;
+}
+
