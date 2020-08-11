@@ -32,3 +32,7 @@ body{
     background-color: #656565;
     color: #fff;
 }
+
+.span-two{
+    grid-column: span 2;
+}
