@@ -24,6 +24,10 @@ class Calculator{
         
     }
     
+    updateDisplay(){
+        
+    }
+    
 }
 
 const numberButtons = document.querySelectorAll('[data-number]');
