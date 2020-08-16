@@ -3,6 +3,24 @@ class Calculator{
         this.previousOperandTextElement = previousOperandTextElement
         this.currentOperandTextElement = currentOperandTextElement
     }
+    
+    clear(){
+        
+    }
+    
+    delete(){
+        
+    }
+    
+    appendNumber(){
+        
+    }
+    
+    chooseOperation(){
+        
+    }
+    
+    
 }
 
 const numberButtons = document.querySelectorAll('[data-number]');
