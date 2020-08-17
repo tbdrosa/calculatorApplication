@@ -4,23 +4,23 @@ class Calculator{
         this.currentOperandTextElement = currentOperandTextElement
         this.clear()
     }
-    
+    /*this is the function to clear the numbers on the display*/
     clear(){
         this.currentOperand = ''
         this.previousOperand = ''
         this.Operation = undefined
     }
-    
+    /*this is the function to delete numbers from ending to beginning one-by-one*/
     delete(){
         this.currentOperand = this.currentOperand.toString().slice(0, -1)
         
     }
-    
+    /*this converted the numbers to a string so when we 'add' numbers  they are paired next to one another instead of being mathematically added */
     appendNumber(number){
         if(number === "." && this.currentOperand.includes('.'))return
         this.currentOperand = this.currentOperand.toString() + number.toString() 
     }
-    
+ 
     chooseOperation(operation){
         if(this.currentOperand === '')return
         if(this.previousOperand !== ''){
@@ -30,7 +30,7 @@ class Calculator{
         this.previousOperand = this.currentOperand
         this.currentOperand = ''
     }
-    
+       /*this is the function to impliment the mathematical operations and retain the numbers if no operation was clicked*/
     compute(){
         let computation
         const prev = parseFloat(this.previousOperand)

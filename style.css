@@ -9,7 +9,7 @@ body{
     margin: 0;
    background-color: #ffe3b6;
 }
-
+/* this is the grid layout to center all the items /buttons  */
 .calculator-grid{
     display: grid;
     justify-content: center;
@@ -19,7 +19,7 @@ body{
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
     
 }
-
+/* this is the grid layout for all buttons */
 .calculator-grid > button{
     cursor: pointer;
     font-size: 2rem;
@@ -32,11 +32,12 @@ body{
     background-color: #656565;
     color: #fff;
 }
-
+/* this increases the size of the AC and = buttons */
 .span-two{
     grid-column: span 2;
 }
 
+/* this is the styling for the output display screen */
 .output{
     grid-column: 1 / -1;
     background-color: rgba( 0, 0, 0, 0.75);
@@ -48,12 +49,12 @@ body{
     word-wrap: break-word;
     word-break: break-all;
 }
-
+/* this is the styling for the numbers that go to the top after pressing math opperation */
 .output .previous-operand{
     color: rgba( 255, 255, 255, 0.75);
     font-size: 1.5rem;
 }
-
+/* this is the styling for the numbers that come after the operation */
 .output .current-operand{
     color: #fff;
     font-size: 3rem;
